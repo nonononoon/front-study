@@ -8,26 +8,32 @@
 <body>
     <form>
         고객명 : <input type="text"> <br>
+        <br>
         전화번호 : <input type="tel"> <br>
+        <br>
         E-mail : <input type="email"> <br>
+        <br>
         피자선택 : <select> 
                 <option> 피자를 선택하세요 </option> 
                 </select> <br>
         <fieldset>
             <legend>피자 사이즈</legend>
-            <input type="radio" value="1">small
-            <input type="radio" value="2">medium
-            <input type="radio" value="3">large
+            <label><input type="radio" name="pz_size" value="1">Small</label> <br><br>
+            <label><input type="radio" name="pz_size" value="2">Medium</label> <br><br>
+            <label><input type="radio" name="pz_size" value="3">Large</label> <br><br>
         </fieldset>
         <fieldset>  
             <legend>토핑 선택</legend>
-            <input type="checkbox" value="1">베이컨
-            <input type="checkbox" value="2">치즈
-            <input type="checkbox" value="3">양파
-            <input type="checkbox" value="3">버섯
+            <label><input type="checkbox" value="1">베이컨></label> <br><br>
+            <label><input type="checkbox" value="2">치즈</label> <br><br>
+            <label><input type="checkbox" value="3">양파</label> <br><br>
+            <label><input type="checkbox" value="3">버섯</label> <br><br>
         </fieldset>
-        희망배송시간 : <input type="time"> <br>
-        배송시 요청사항 : <textarea></textarea> <br>
+        <br>
+        <label>희망배송시간 : <input type="time"></label> <br>
+        <br>
+        <label>배송시 요청사항 : <textarea></textarea></label> <br>
+        <br>
         <input type="submit" value="주문하기">
     </form>
 </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* position
+                static 기존 흐름 (기본)
+                relative 흐름대로 + 위치조정  <원래 자기가 있어야 할 위치 기준>
+                위치조정 : left right top bottom 
+                absolute 흐름무시 + 절대좌표 위치조정 <위치조정이 가능한 부모요소 시작시점 기준>
+                    부모요소 static : x
+                    부모요소 relative : o
+
+                위치조정
+                left rigte top 등 
+                z-index 큰 값을 가질수록 우선순위가 높음 
+                fixed 흐름무시+절대좌표 위치 
+                sticky 흐름대로+특정위치에 가면 fixed처럼 고정
+        */
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .red-box {
+            background-color: red;
+            position: relative;
+            left: 100px; 
+        }
+
+        .green-box {
+            background-color: green;
+            position: static;
+        }
+
+        .blue-box {
+            background-color: blue;
+            position: relative;
+            top: -50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

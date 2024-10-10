@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<div lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .red-box {
+            background-color: red;
+            width: 250px;
+            height: 100px;
+            float: left;
+        }
+
+        .blue-box {
+            background-color: blue;
+            width: 500px;
+            height: 200px;
+            float: left;
+        }
+
+        .green-box {
+            background-color: green;
+            width: 250px;
+            height: 100px;
+            float: left;
+        }
+
+        .container::after { /* 내부요소 전체를 float: left; 줬을때 */
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<div>
+    <div class="container">
+    <div class="red-box"></div>
+    <div class="green-box"></div>
+    <p>글자가운데정렬</p> <!-- p태그를 감싸는 div 만들고 div 한테 float 주는게 좋음--
+                        ex> <div class="main" -->
+    <div class="blue-box"></div>
+    </div>
+</div>    
+</body>
+</html>

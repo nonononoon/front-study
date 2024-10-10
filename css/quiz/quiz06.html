@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .inner-box {
+            width: 300px;
+            border: 1px black solid;
+            float:left;
+            background-color: lightgray;
+        } /* 똑같은 패턴으로 box 만든다면 , height 적어주는 것이 좋음
+        안적으면 글씨가 차지하는 대로 임의로 설정 되기 때문에 양쪽 세로축이 달라질수 있음 */
+
+        .img {
+            width: 150px;
+            float:left;
+        }
+
+        .container ::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<div>
+    <div class="container">
+        <div class="inner-box">
+            <img class="img" src="../../html/img/rm.jpg">
+            Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. 
+            Ducimus aut quis consectetur ratione ullam labore maiores voluptatem minima atque quos illum, 
+            dolore voluptate minus non rerum sit repellendus accusantium sint.
+        </div>
+        <div class="inner-box">
+            <img class="img" src="../../html/img/rm.jpg">
+            Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. 
+            Ducimus aut quis consectetur ratione ullam labore maiores voluptatem minima atque quos illum, 
+            dolore voluptate minus non rerum sit repellendus accusantium sint.</div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mn-container12 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container1 {
+            display: flex;
+            height: 100px;
+            width: 700px;
+            border: 1px solid black;
+            justify-content:space-between;
+        }
+
+            .flex-item1 {
+            color: white;
+            background-color: red;
+            display: flex;
+            height: 100px;
+            display: inline-flex;
+            width: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* align-items: center; */
+            }
+            .flex-item2 {
+            color: white;
+            background-color: red;
+            display: flex;
+            display: inline-flex;
+            height: 100px;
+            width: 100px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            }
+        .flex-container2 {
+        display: flex;
+        height: 300px;
+        width: 700px;
+        border: 1px solid black;
+        }
+        .flex-item3 {
+            background-color:yellow;
+            display: flex;
+            width: 490px; 
+            justify-content:space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        .black {
+            transition-duration: 2s;
+            transition-property: all;
+
+        }
+
+        .black:hover {
+            transform: scale(2);
+        }
+
+            .flex-item4 {
+            color: white;
+            background-color:green;
+            display: flex;
+            width: 210px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            }
+        .flex-container3 {
+        display: flex;
+        height: 100px;
+        width: 700px;
+        border: 1px solid black;
+        }
+        .flex-item5 {
+            color: white;
+            background-color:blue;
+            display: flex;
+            display: inline-flex;
+            width: 700px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            }
+        
+        .black {
+            border: 1px solid black;
+            margin: 30px;
+            height: 50px;
+            width: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="mn-container12">
+<div class="mn-container">
+    <div class="flex-container1">
+        <div class="flex-item1">메인메뉴</div>
+        <div class="flex-item2">마이페이지</div>
+    </div>
+    <div class="flex-container2">
+        <div class="flex-item3">
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+        </div>
+        <div class="flex-item4">aisde</div>
+    </div>
+    <div class="flex-container3">
+        <div class="flex-item5">footer</div>
+</div> 
+</div>  
+</body>
+</html>

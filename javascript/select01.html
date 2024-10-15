@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>글자</p>
+    </div>
+
+    <div class="container">
+        <div class="box a" id="box-a-id">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+
+    <p id="target">text<spen style="display: none;">hidden</spen></p>
+
+    <script>
+        let cup = '콜라';
+        cup = '사이다';
+        cup = '맥주';
+
+        const boxA = document.getElementById('box-a-id'); // 대체로 많이 씀 
+
+
+
+        document.getElementById('box-a-id');
+        document.getElementsByClassName('box');
+        document.querySelector('#box-a-id'); // css 기준 찾는 법
+        document.querySelectorAll('.container'); // css 기준 찾는 법
+
+
+
+      
+        const div_target = document.getElementById('target');
+        console.log(div_target.textContent);
+        console.log(div_target.innerText);
+        console.log(div_target.innerHTML);
+
+        document.getElementById('target').textContent = 'textxcontent 작성';
+        document.getElementById('target').innerText = 'innertaxt 작성';
+        document.getElementById('target').innerHTML = 'innerhtml 작성'; // 덮어쓰게 되면 제일 마지막열이 화면에 보임
+
+        div_target.style.color = '#ab93f6';
+
+        document.querySelector('#box-a-id').classList.add('bg-red');
+        
+
+    </script>
+</body>
+</html>

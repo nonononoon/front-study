@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            background-color: green;
+            height: 400px;
+            border: 1px solid black;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        div h3 {
+            color: white;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+        .emte {
+            height: 30px;
+            width: 390px;
+            background-color: green;
+            border: 1px grey solid;
+            margin: 5px;
+            margin-top: 30px;
+            color: grey;
+         }
+
+        .sub {
+            height: 60px;
+            width: 390px;
+            background-color: greenyellow;
+            margin: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        div button {
+            width: 200px;
+            height: 35px;
+            margin-top: 20px;
+            background-color: gray;
+        }
+
+        div button:hover {
+            background-color: greenyellow;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button ld="sign"><a href="./signup.html">sign up </a></button>
+            <button>log in</button>
+        </div>
+        <h3> Welcome Back!</h3>
+        <form> 
+        <input class="emte" type="email" value="Emall Address *"> <br>
+        <input class="emte" type="text" value="Password"> <br>
+        <input class="sub" type="submit" value="LOG IN">
+        </form>
+    </div>
+
+</body>
+</html>
